@@ -1,17 +1,21 @@
 .card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+h4, p, iframe {
+    padding: 1%;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
 /* Add some padding inside the card container */
 .container {
-  padding: 2px 16px;
+    padding: 2px 16px;
 }
 
 .w3-theme-l5 {color:#000 !important; background-color:#fefbf5 !important}
@@ -36,3 +40,8 @@
 .w3-hover-theme:hover {color:#000 !important; background-color:#efc050 !important}
 .w3-hover-text-theme:hover {color:#efc050 !important}
 .w3-hover-border-theme:hover {border-color:#efc050 !important}
+
+table, th, td {
+    border: 1px solid black;
+    
+}

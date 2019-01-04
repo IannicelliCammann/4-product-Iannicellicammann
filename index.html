@@ -15,6 +15,7 @@
         <link rel="stylesheet" href="css/style.css">
         <!--local w3.css
 <link rel="stylesheet" href="css/w3.css">-->
+        <link rel="stylesheet" href="js/tab.js">
 
     </head>
 
@@ -47,18 +48,152 @@
         </div>
 
         <!-- Page content -->
-        <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
+        <div class="w3-content w3-padding-large w3-margin-top">
 
             <!--Images 1-->
-            <div class="card">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/MCmYFX3kmTo?start=29" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 525px"></iframe>
+            <div class="card" id="description">
+                <h4><b>Description</b></h4> 
+                <p>You can’t have it all … Really? Nobody told that to the Release 5 C. Our top-shelf trail bike is the embodiment of new-school technology. Thanks to our Level Link suspension, the Release 5 C absolutely levels the kind of drops and rock gardens that stymie bikes with even more suspension travel. At the same time, our patent-pending design allows the Release to accelerate and climb with the kind of blazing efficiency you’d normally expect from a wispy, featherweight race rig.</p>
+
+                <p>The Release 5 C, in a nutshell, is the perfect all-rounder. The bike’s modern geometry - long in the front, short in the rear, low in the bottom bracket —lends the bike stability at high speeds without sacrificing agility when the trails get tight.</p>
+
+                <p>What’s more, we’ve decked this machine out with a peerless parts kit that includes the absolutely bomber Fox 36 Float fork and Fox Performance Elite Float DPX2 rear shock, an ultra-precise SRAM X01 Eagle 12-speed drivetrain, a wheelset with Race Face ARC 30 rims and Novatec hubs, and quick-stopping SRAM Guide RS hydraulic disc brakes with 180mm rotors. A KS LEV Integra dropper post and Race Face Aeffect R cockpit components round out the stellar package.</p> 
+
                 <div class="container">
-                    <h4><b>Dimondback Mountain</b></h4> 
-                    <p>Release 5C Carbon</p> 
+                    <button onclick="myFunction('Demo1')" class="w3-button w3-grey w3-block w3-centerr-align">
+                        Click to Watch Video</button>
+
+                    <div id="Demo1" class="w3-container w3-hide">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/MCmYFX3kmTo?start=29" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width: 100%; height: 525px"></iframe>
+
+                    </div>
+
+                    <script>
+                        function myFunction(id) {
+                            var x = document.getElementById(id);
+                            if (x.className.indexOf("w3-show") == -1) {
+                                x.className += " w3-show";
+                            } else { 
+                                x.className = x.className.replace(" w3-show", "");
+                            }
+                        }
+                    </script>
                 </div>
             </div>
             <!--Images 2-->
-            <img src="/w3images/ocean2.jpg" alt="Ocean II" class="w3-image w3-margin-top" width="1000" height="500">
+            <div class="card" id="description">
+                <h4><b>Specs</b></h4> 
+
+                <div class="container">
+
+                    <table style="width:100%">
+                        <tr>
+                            <th>Piece</th>
+                            <th>Description</th> 
+                        </tr>
+                        <tr>
+                            <td>Frame</td>
+                            <td>Carbon Release 27.5, Monocoque Carbon Front and Rear Triangle, 130mm Travel, Level Link Suspension Platform, Euro Standard Threaded BB, ISCG-05 Tabs, Boost 148x12mm Maxle Drop Out, 1.5" Tapered Headtube, Post Mount Disc Tabs</td> 
+                        </tr>
+                        <tr>
+                            <td>Rear Shock</td>
+                            <td>Fox Performance Elite Float DPX2, 3 Position Lever w/ Open Mode Adjust, LV EVOL, 200x57mm</td> 
+                        </tr>
+                        <tr>
+                            <td>Fork</td>
+                            <td>Fox 36 Performance Elite Float, 27.5", 150mm Travel, Fit4, 3 Position Dampener, Rebound Adjust, 1.5" Tapered Steerer, 110x15mm Thru-axle</td> 
+                        </tr>
+                        <tr>
+                            <td>Headset</td>
+                            <td>FSA No. 57 Sealed Cartridge</td> 
+                        </tr>
+                        <tr>
+                            <td>Cranks</td>
+                            <td>Truvativ Descendant Carbon, w/ 34T Eagle Chainring</td> 
+                        </tr>
+                        <tr>
+                            <td>Bottom Bracket</td>
+                            <td>SRAM GXP</td> 
+                        </tr>
+                        <tr>
+                            <td>Front Derailleur</td>
+                            <td>MRP XCG V2 Alloy Bash Guard, 30-36T, ISCG-05</td> 
+                        </tr>
+                        <tr>
+                            <td>Rear Derailleur</td>
+                            <td>SRAM XO1 Eagle, 12 Speed</td> 
+                        </tr>
+                        <tr>
+                            <td>Shifter</td>
+                            <td>SRAM XO1 Eagle 12 Speed X-Actuation Trigger</td> 
+                        </tr>
+                        <tr>
+                            <td>Cogset</td>
+                            <td>SRAM XG1295 Eagle, 12 Speed, 10-50T</td> 
+                        </tr>
+                        <tr>
+                            <td>Chain</td>
+                            <td>SRAM XO1 Eagle, 12 Speed</td> 
+                        </tr>
+                        <tr>
+                            <td>Spokes</td>
+                            <td>2.0/1.8/2.0 Butted Stainless Steel</td> 
+                        </tr>
+                        <tr>
+                            <td>Rims</td>
+                            <td>RaceFace Arc30, Tubeless Compatible, 32h</td> 
+                        </tr>
+                        <tr>
+                            <td>Tires</td>
+                            <td>Maxxis Minion DHF 27.5x2.5" EXO, WT, TLR, Folding / Maxxis Minion DHR 27.5x2.4" EXO, WT, TLR, Folding</td> 
+                        </tr>
+                        <tr>
+                            <td>Brakes</td>
+                            <td>SRAM Guide RS Hydraulic Disc, w/ 180mm Front / 180mm Rear Centerline Rotors</td> 
+                        </tr>
+                        <tr>
+                            <td>Brake Levers</td>
+                            <td>SRAM Guide RS</td> 
+                        </tr>
+                        <tr>
+                            <td>Pedals</td>
+                            <td>DB4L CNC Platform, Sealed Cartidge Bearing w/ Replaceable Pins</td> 
+                        </tr>
+                        <tr>
+                            <td>Handlebar</td>
+                            <td>Raceface Æffect R, 780mm Wide, 20mm Rise, 35mm Bar Bore</td> 
+                        </tr>
+                        <tr>
+                            <td>Grips</td>
+                            <td>Ergon GE1 Lock-On</td> 
+                        </tr>
+                        <tr>
+                            <td>Stem</td>
+                            <td>Raceface Æffect R 35, 40mm Reach, 35mm Bar Bore</td> 
+                        </tr>
+                        <tr>
+                            <td>Seat</td>
+                            <td>WTB Volt Race</td> 
+                        </tr>
+                        <tr>
+                            <td>Seatpost</td>
+                            <td>KS LEV Integra Internal Dropper, w/ SouthPaw Remote, 31.6mm, SM/MD = 125mm, LG/XL = 150mm</td> 
+                        </tr>
+                        <tr>
+                            <td>Extras</td>
+                            <td>Owner’s Manual, Assembly Guide, DB Shock Pump, Tubless Valves, DB Torque Wrench w/ 3mm/ 4mm/ 5mm/ T25 Hex Bits, Diamondback Mud Guard, Extra Derailleur Hanger</td> 
+                        </tr>
+                        
+                        
+                    </table>
+
+                    <div id="Demo1" class="w3-container w3-hide">
+
+                    </div>
+
+                </div>
+            </div>
+
             <!--Images 3-->
             <img src="/w3images/falls2.jpg" alt="Falls" class="w3-image w3-margin-top" width="1000" height="500">
             <!--Images 4-->
@@ -66,33 +201,12 @@
             <!--Images 5-->
             <img src="/w3images/mountains2.jpg" alt="Mountains" class="w3-image w3-margin-top" width="1000" height="500">
 
-            <!-- Contact -->
-            <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-                <h3 class="w3-center">Contact</h3>
-                <hr>
-                <p>Mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sed tellus.</p>
 
-                <form action="/action_page.php" target="_blank">
-                    <div class="w3-section">
-                        <label>Name</label>
-                        <input class="w3-input w3-border" type="text" required name="Name">
-                    </div>
-                    <div class="w3-section">
-                        <label>Email</label>
-                        <input class="w3-input w3-border" type="text" required name="Email">
-                    </div>
-                    <div class="w3-section">
-                        <label>Message</label>
-                        <input class="w3-input w3-border" required name="Message">
-                    </div>
-                    <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-                </form><br>
-                <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-
-            </div>
 
             <!-- End page content -->
         </div>
+
+
 
     </body>
 </html>
